@@ -30,6 +30,7 @@ public class ScreenshotPractice {
 		//FileUtils.copyFile(screenshotFile, new File(".//screenshot//" + screenshot + ".png"));
 		driver.close();
 		//Check this
+		//Check again
 
 	}
 
