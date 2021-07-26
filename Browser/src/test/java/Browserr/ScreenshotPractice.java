@@ -29,7 +29,7 @@ public class ScreenshotPractice {
 		FileUtils.copyFile(scr, new File(".//Screens//" + screenBydate + ".png"));
 		//FileUtils.copyFile(screenshotFile, new File(".//screenshot//" + screenshot + ".png"));
 		driver.close();
-		
+		//Check this
 
 	}
 
