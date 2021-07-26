@@ -1,17 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-07-25T15:53:47 IST" name="Default suite" finished-at="2021-07-25T15:54:10 IST" duration-ms="23104">
+  <suite started-at="2021-07-26T12:00:18 IST" name="FREE CRM Application Test Automation Test Suite" finished-at="2021-07-26T12:00:56 IST" duration-ms="38377">
     <groups>
     </groups>
-    <test started-at="2021-07-25T15:53:47 IST" name="Default test" finished-at="2021-07-25T15:54:10 IST" duration-ms="23104">
+    <test started-at="2021-07-26T12:00:18 IST" name="Free CRM App Test Cases" finished-at="2021-07-26T12:00:56 IST" duration-ms="38377">
+      <class name="Browserr.ScreenshotPractice">
+        <test-method signature="screenshot()[pri:0, instance:Browserr.ScreenshotPractice@6a400542]" started-at="2021-07-26T12:00:45 IST" name="screenshot" finished-at="2021-07-26T12:00:56 IST" duration-ms="11335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+      </class> <!-- Browserr.ScreenshotPractice -->
       <class name="Browserr.ScreenshotFirstTest">
-        <test-method signature="signup()[pri:0, instance:Browserr.ScreenshotFirstTest@778d1062]" started-at="2021-07-25T15:53:47 IST" name="signup" finished-at="2021-07-25T15:54:10 IST" duration-ms="23069" status="PASS">
+        <test-method signature="signup()[pri:0, instance:Browserr.ScreenshotFirstTest@654f0d9c]" started-at="2021-07-26T12:00:32 IST" name="signup" finished-at="2021-07-26T12:00:45 IST" duration-ms="12925" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signup -->
       </class> <!-- Browserr.ScreenshotFirstTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="Browserr.ExplicitWait">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:Browserr.ExplicitWait@149e0f5d]" started-at="2021-07-26T12:00:18 IST" name="launchBrowser" finished-at="2021-07-26T12:00:25 IST" duration-ms="7109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="propertiesFile()[pri:0, instance:Browserr.ExplicitWait@149e0f5d]" started-at="2021-07-26T12:00:25 IST" name="propertiesFile" finished-at="2021-07-26T12:00:31 IST" duration-ms="6695" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- propertiesFile -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Browserr.ExplicitWait@149e0f5d]" started-at="2021-07-26T12:00:31 IST" name="tearDown" finished-at="2021-07-26T12:00:32 IST" duration-ms="264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Browserr.ExplicitWait -->
+    </test> <!-- Free CRM App Test Cases -->
+  </suite> <!-- FREE CRM Application Test Automation Test Suite -->
 </testng-results>
