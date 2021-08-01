@@ -8,20 +8,24 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 
-public class ScreenshotPractice {
+public class ScreenshotPractice  {
 	@Test
-	public void screenshot() throws IOException {
+	public void screenshot() throws IOException, InterruptedException {
+//		LaunchBrowser bro = new LaunchBrowser();
+//		bro.boom();
+		
 		
 		Date date = new Date();
 		
 		String screenBydate =date.toString().replace(" ", "-").replace(":", "-");
-		WebDriverManager.chromedriver().setup();
-		ChromeDriver driver = new ChromeDriver();
+		WebDriverManager.firefoxdriver().setup();
+		FirefoxDriver driver = new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.get("https://www.google.com/");
@@ -31,6 +35,7 @@ public class ScreenshotPractice {
 		driver.close();
 		//Check this
 		//Check again
+		
 
 	}
 

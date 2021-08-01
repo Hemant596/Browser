@@ -23,16 +23,20 @@ import Utility.propertiesUtility;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 
-public class ExplicitWait extends propertiesUtility {
+public class ExplicitWait extends LaunchBrowser {
 	WebDriver driver;
 	Utilities propertiesUtility;
 
 
 	@BeforeMethod
 	public void launchBrowser() throws IOException {
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
-		propertiesUtility = new Utilities();
+		//WebDriverManager.chromedriver().setup();
+		
+		
+//		driver = new ChromeDriver();
+//		propertiesUtility = new Utilities();
+		
+		
 //		Properties prop= new Properties();
 //		FileInputStream ip = new FileInputStream("C:\\Users\\sharma.hemant\\git\\Browser\\Browser\\config.properties");
 //		prop.load(ip);
@@ -66,6 +70,9 @@ public class ExplicitWait extends propertiesUtility {
 		Thread.sleep(3000);
 		WebElement login = driver.findElement(By.xpath("//*[contains(text(),'Login') and @class='ui fluid large blue submit button']"));
 		login.click();
+		WebDriverWait wait =new WebDriverWait(driver, 10);
+		WebElement sizee = driver.findElement(By.xpath("(//*[@id='nav-cart'])[1]"));
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//*[@id='nav-cart'])[1]")));
 	}
 
 	

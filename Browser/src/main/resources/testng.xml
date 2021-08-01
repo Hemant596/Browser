@@ -9,9 +9,10 @@
 
 	<test name="Free CRM App Test Cases">
 		<classes>
-			<class name="Browserr.ExplicitWait"></class>
+			<class name="Browserr.Testing"></class>
 			<class name="Browserr.ScreenshotFirstTest"></class>
-			<class name="Browserr.ScreenshotPractice"></class>  
+			<class name="Browserr.ScreenshotPractice"></class> 
+			<class name="Browserr.AmazonPractice"></class>  
 
 		</classes>
 	</test>
