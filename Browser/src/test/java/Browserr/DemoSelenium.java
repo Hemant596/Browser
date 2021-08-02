@@ -97,7 +97,7 @@ public class DemoSelenium {
 	}
 	
 	public static void gitcheck() {
-		System.out.println("go went gone");
+		System.out.println("done added");
 	}
 }
 
