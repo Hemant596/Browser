@@ -95,5 +95,9 @@ public class DemoSelenium {
 		driver.navigate().back();
 		
 	}
+	
+	public static void gitcheck() {
+		System.out.println("go went gone");
+	}
 }
 
