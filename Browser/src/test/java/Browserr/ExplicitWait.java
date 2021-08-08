@@ -3,6 +3,7 @@ package Browserr;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -70,13 +71,21 @@ public class ExplicitWait extends LaunchBrowser {
 		Thread.sleep(3000);
 		WebElement login = driver.findElement(By.xpath("//*[contains(text(),'Login') and @class='ui fluid large blue submit button']"));
 		login.click();
-		WebDriverWait wait =new WebDriverWait(driver, 10);
-		WebElement sizee = driver.findElement(By.xpath("(//*[@id='nav-cart'])[1]"));
-		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//*[@id='nav-cart'])[1]")));
+		
+		
+//		WebDriverWait wait =new WebDriverWait(driver, 10);
+//		WebElement sizee = driver.findElement(By.xpath("(//*[@id='nav-cart'])[1]"));
+	//wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//*[@id='nav-cart'])[1]")));
+		
+//		new WebDriverWait(driver, 5)
+//		.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("(//*[@id='nav-cart'])[1]")));
+		
+//		new WebDriverWait(driver, Duration.ofSeconds(5))
+//		.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("(//*[@id='nav-cart'])[1]")));
 	}
 
 	
-//	@DataProvider(name = "create")
+@DataProvider(name = "create")
 //	public Object[][] dataSet1(){
 //		return new Object[][] {
 //			//{"yash@gmail.com", "jbjhsfd"},

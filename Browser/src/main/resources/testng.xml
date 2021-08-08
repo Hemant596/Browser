@@ -8,11 +8,15 @@
 
 
 	<test name="Free CRM App Test Cases">
+	
+	<parameter name = "username" value = "hemant.hs828@gmail.com"/>
+	<parameter name = "password" value = "2@Discus2@"/>
 		<classes>
-			<class name="Browserr.Testing"></class>
+			<class name="Browserr.DataProvid"></class>
+			<!-- <class name="Browserr.Testing"></class>
 			<class name="Browserr.ScreenshotFirstTest"></class>
 			<class name="Browserr.ScreenshotPractice"></class> 
-			<class name="Browserr.AmazonPractice"></class>  
+			<class name="Browserr.AmazonPractice"></class>   -->
 
 		</classes>
 	</test>

@@ -1,0 +1,5 @@
+[INFO ] 2021-08-04 00:57:22.633 [main] Log4JDemo - This is information message
+[ERROR] 2021-08-04 00:57:22.637 [main] Log4JDemo - This is error message
+[WARN ] 2021-08-04 00:57:22.637 [main] Log4JDemo - This is warniing message
+[FATAL] 2021-08-04 00:57:22.637 [main] Log4JDemo - This is fatel message
+[TRACE] 2021-08-04 00:57:22.638 [main] Log4JDemo - This is trace message
